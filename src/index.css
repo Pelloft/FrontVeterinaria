@@ -1,3 +1,10 @@
+/* Aplicar box-sizing: border-box globalmente */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +12,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #f2f2f2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,38 +38,34 @@ body,
   margin: 0;
   padding: 0;
   background-color: #f2f2f2;
-  /* Cambia este color al que quieras usar como fondo */
-  /* Cambia este color al que quieras usar como fondo */
-  /* el mismo fondo que tu app */
   font-family: sans-serif;
 }
 
 /* Contenedor para el login */
 .login-container {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f2f5;
-  padding: 2rem;
+  padding: 20px;
+  margin: 50px auto;
+  width: 400px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 /* Contenedor para el register */
 .register-container {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f2f5;
-  padding: 2rem;
+  padding: 20px;
+  margin: 50px auto;
+  width: 400px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 h1 {
